@@ -1,102 +1,142 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的個人網站</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* 基本樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        header, section, footer {
+            padding: 2rem 10%;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1.5rem 10%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
 
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        /* 導覽樣式 */
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
+        /* Section 樣式 */
+        section {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        #about, #skills, #projects, #contact {
+            padding: 2rem 0;
+        }
+        #skills ul, #projects ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        #skills ul li, #projects ul li {
+            padding: 0.5rem 0;
+        }
 
-    .container {
-      width: 80%;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
-
-    .section-title {
-      font-size: 28px;
-      color: #333;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .profile-image {
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-      display: block;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .content {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #555;
-      margin-top: 20px;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+        /* Footer 樣式 */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>歡迎來到我的個人網站</h1>
-  </header>
+    <!-- Header & Navigation -->
+    <header>
+        <h1>My Name</h1>
+        <p>Welcome to my personal website! Here you can learn more about me, my skills, and my projects.</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="container">
-    <h2 class="section-title">關於我</h2>
-    <img src="https://via.placeholder.com/300" alt="我的照片" class="profile-image">
-    <p class="content">
-      大家好，我是您的網站主人！我是一位喜歡學習新技術的開發者，擅長 HTML、CSS 和 JavaScript。我喜歡創建有趣的網頁和應用，並且熱衷於設計和用戶體驗。這個網站是我展示自己和分享我的經歷的一個平台，希望大家會喜歡！
-    </p>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate developer with a love for creating efficient and effective solutions. I enjoy working on both the front-end and back-end, bringing ideas to life through code.</p>
+    </section>
 
-    <h2 class="section-title">我的技能</h2>
-    <p class="content">
-      - HTML: 熟練使用 HTML 來構建網頁結構。<br>
-      - CSS: 擅長使用 CSS 設計精美的網頁，並讓網頁具有良好的響應式設計。<br>
-      - JavaScript: 精通 JavaScript，能夠製作動態網站和互動元素。<br>
-      - Git: 使用 Git 進行版本控制，並熟悉 GitHub 操作。<br>
-    </p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
 
-    <h2 class="section-title">我的興趣</h2>
-    <p class="content">
-      除了編程之外，我還喜歡閱讀、旅行和攝影。這些愛好讓我能夠從不同的角度來看待事物，並且啟發我創造更多有趣的項目。
-    </p>
-  </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Portfolio Website:</strong> A personal portfolio showcasing my work.</li>
+            <li><strong>Weather App:</strong> A web app providing weather forecasts using an API.</li>
+            <li><strong>Task Manager:</strong> A to-do list app for managing tasks effectively.</li>
+        </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2024 我的個人網站 | 版權所有</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me through any of the following ways:</p>
+        <ul>
+            <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">My LinkedIn</a></li>
+            <li>GitHub: <a href="https://github.com/yourusername">My GitHub</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Name. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
